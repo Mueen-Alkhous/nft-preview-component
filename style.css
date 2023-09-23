@@ -1,0 +1,144 @@
+:root {
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    width: 350px;
+    height: 596px;
+    background-color: #15263F;
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+
+}
+
+.container>.main-img {
+    width: 302px;
+    height: 302px;
+    margin: 24px;
+    border-radius: 8px;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.container>.main-img:hover {
+    background-color: rgba(0, 255, 248, .5);
+    background-blend-mode: overlay;
+}
+
+.container>.main-img:hover::after {
+    content: "";
+    width: 302px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.information .title {
+    color: white;
+    margin: 0 0 16px 24px;
+    font-size: 22px;
+}
+
+.information .title:hover {
+    color: #00FFF8;
+    cursor: pointer;
+}
+
+
+.information .description {
+    color: #8BACD9;
+    line-height: 26px;
+    margin: 0 0 24px 24px;
+}
+
+.price-time {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 24px 24px 24px;
+    position: relative;
+}
+
+.price {
+    color: #00FFF8;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.price img {
+    margin-right: 6.5px;
+}
+
+.time {
+    color: #8BACD9;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.time img {
+    margin-right: 7.7px
+}
+
+.price-time::after {
+    content: "";
+    width: 302px;
+    height: 1px;
+    background-color: #2E405A;
+    position: absolute;
+    bottom: -24px;
+}
+
+
+.creator {
+    display: flex;
+    align-items: center;
+    margin: 0 0 32px 24px;
+    position: relative;
+    top: 16px;
+}
+
+.creator img {
+    width: 33px;
+    height: 33px;
+    margin-right: 14px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.creator p {
+    color: #8BACD9;
+    font-size: 16px;
+}
+
+
+.creator p span {
+    color: white;
+}
+
+.creator p span:hover {
+    color: #00FFF8;
+    cursor: pointer;
+}
